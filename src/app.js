@@ -58,7 +58,7 @@ const buildPlayers = (players, type) => {
         if (players[i].type === "hero"  && type === "hero") {
             fragment += `
                 <div class="player">
-                    <img src="${players[i].image}" />
+                    <img src="${players[i].image}" alt="">
                     <div class="name">${players[i].name}</div>
                     <div class="strength">${players[i].strength}</div>
                 </div>
@@ -66,7 +66,7 @@ const buildPlayers = (players, type) => {
         } else if (players[i].type === "villain" && type === "villain"){
             fragment += `
                 <div class="player">
-                    <img src="${players[i].image}" />
+                    <img src="${players[i].image}" alt="">
                     <div class="name">${players[i].name}</div>
                     <div class="strength">${players[i].strength}</div>
                 </div>
